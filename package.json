@@ -1,0 +1,29 @@
+{
+  "name": "latex-prose-wrap",
+  "displayName": "LaTeX Prose Wrap",
+  "description": "Reflow LaTeX prose to a fixed column while preserving headings, comments, and non-prose environments.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "license": "MIT",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Formatters"],
+  "extensionKind": ["workspace", "ui"],
+  "activationEvents": ["onLanguage:latex", "onLanguage:tex"],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "LaTeX Prose Wrap",
+      "properties": {
+        "latexProseWrap.column": {
+          "type": "integer", "default": 80, "minimum": 20, "maximum": 500,
+          "scope": "resource",
+          "description": "Maximum source line width. An indivisible command or formula may exceed it."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "package": "python3 package_vsix.py"
+  }
+}
