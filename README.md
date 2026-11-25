@@ -41,6 +41,3 @@ node cli.js --column 80 < input.tex > /tmp/formatted.tex
 
 API: [VS Code formatting provider](https://code.visualstudio.com/api/references/vscode-api#languages.registerDocumentRangeFormattingEditProvider),
 [VSIX 설치](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix).
-# vscode-tex-formatter
-# vscode-tex-formatter
-# vscode-tex-formatter
